@@ -74,6 +74,35 @@ ul {
 	color: var(--text-color-1);
 }
 
+#Header ul {
+	/*Layout*/
+	display: flex;
+	justify-content: space-between;
+	gap: var(--spacing-sm);
+}
+
+#Header .nav-underline .nav-link.active {
+	color: var(--color-jetblack-5);
+	border-bottom-color: var(--color-raspberry-4);
+}
+
+#Header .nav-underline .nav-link.active:hover {
+	color: var(--color-jetblack-5);
+	border-bottom-color: var(--color-raspberry-4);
+}
+
+#Header .nav-underline .nav-link:hover {
+	background-color: transparent;
+	border-bottom-color: transparent;
+	color: var(--color-jetblack-5);
+}
+
+#Header .btn-solid.btn-styled.theme-primary {
+	background: var(--color-jetblack-5);
+	color: var(--color-text-2);
+	border-color: var(--color-jetblack-5);
+}
+
 /* =========================================================
    MAIN
    ========================================================= */
@@ -94,14 +123,41 @@ ul {
 	/*Layout*/
 	grid-area: footer;
 	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
 	bottom: 0;
-	height: 150px;
+	height: 180px;
 	padding: 1% 10%;
 	justify-content: space-evenly;
-	align-items: center;
 
 	/*Apparence*/
 	background: var(--color-jetblack-5);
+}
+
+#Footer nav {
+	/*Layout*/
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-content: flex-start;
+	justify-content: flex-start;
+}
+
+#Footer hr {
+	/*Layout*/
+	flex-basis: 100%;
+	border: none;
+	border-top: 1px solid var(--color-text-2);
+	margin: 0;
+}
+
+#Footer span {
+	/*Layout*/
+	flex-basis: 100%;
+	text-align: center;
+
+	/*Apparence*/
+	color: var(--color-text-3);
 }
 
 #Footer p {
@@ -109,13 +165,13 @@ ul {
 	margin-bottom: 6px;
 
 	/*Apparence*/
-	color: white;
-	text-decoration: underline solid 2.25px white;
+	color: var(--color-text-2);
+	text-decoration: underline solid 2.25px var(--color-text-2);
 }
 
 #Footer a {
 	/*Apparence*/
-	color: darkgray;
+	color: var(--color-text-3);
 }
 
 /* =========================================================
