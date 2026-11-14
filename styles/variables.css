@@ -1,0 +1,31 @@
+/* =========================================================
+   VARIABLES
+   ========================================================= */
+:root {
+	/*Couleurs*/
+	--color-beige-1: #eef4d4;
+	--color-teagreen-2: #daefb3;
+	--color-sweetsalmon-3: #ea9e8d;
+	--color-raspberry-4: #d64550;
+	--color-jetblack-5: #1c2826;
+
+	/*Ombres*/
+	--shadow: 0 5px 20px #0000001a;
+	--shadow-hover: 0 5px 20px #00000033;
+
+	/*Bordures*/
+	--border-radius-card: 30px;
+	--border-radius-nav: 30px;
+	--border-radius-button: 15px;
+	--border-radius-img: 30px;
+
+	/*Espacement*/
+	--spacing-xs: 0.625rem;
+	--spacing-sm: 0.9375rem;
+	--spacing-md: 1.875rem;
+	--spacing-lg: 3rem;
+	--infobulle-padding: 0.3rem 0.8rem;
+
+	/*Transition*/
+	--transition: all 0.3s ease;
+}
