@@ -57,7 +57,132 @@
 		</header>
 
 		<!--MAIN-->
-		<main id="Main"></main>
+		<main class="container-fluid">
+			<!-- Section Principale -->
+			<div class="row">
+				<section class="col" id="section-hero">
+					<div>
+						<div id="signalement">Nouveau signalement</div>
+						<h1>Vous avez trouvé quelque chose ?</h1>
+						<p id="sous-titre">
+							Quelques détails suffisent pour aider son propriétaire à le
+							reconnaître et à le récupérer.
+						</p>
+					</div>
+					<hr />
+					<div>
+						<img src="" alt="" />
+						<div>
+							Une démarche solidaire
+							<p>Les informations restent stockées sur cet appareil.</p>
+						</div>
+					</div>
+				</section>
+				<!-- Formulaire object perdu -->
+				<section class="col" id="section-form">
+					<h2>
+						<span class="badge badge-subtle theme-success">01</span>Décrivez
+						l'object
+					</h2>
+					<p>
+						Soyez précis, sans révéler de détail permettant une fausse
+						réclamation.
+					</p>
+
+					<form
+						action="/submit-data"
+						method="POST"
+						enctype="multipart/form-data">
+						<div class="form-group">
+							<label for="nom">Nom de l'objet</label>
+							<input
+								type="text"
+								id="nom"
+								class="form-control"
+								name="nom"
+								required />
+						</div>
+						<label for="description">Description</label>
+						<textarea
+							id="description"
+							class="form-control"
+							name="description"
+							rows="4"
+							required></textarea>
+						<div class="form-group">
+							<label for="photo">Photo</label>
+							<input
+								type="file"
+								id="photo"
+								class="form-control"
+								name="photo"
+								accept="image/png, image/jpeg" />
+						</div>
+						<div class="form-group">
+							<label for="tags">Tags</label>
+							<input
+								type="text"
+								id="tags"
+								class="form-control"
+								name="tags"
+								placeholder="clés, métal, sac (séparé par des virgules)" />
+						</div>
+
+						<hr />
+
+						<div class="form-group">
+							<h2>
+								<span class="badge badge-subtle theme-success">02</span>Où et
+								quand ?
+							</h2>
+							<p>Ces informations permettent d'affiner la recherche.</p>
+						</div>
+						<div class="form-group">
+							<label for="lieu">Établissement / lieu</label>
+							<input
+								type="text"
+								id="lieu"
+								class="form-control"
+								name="lieu"
+								placeholder="Ex. Bibliothèque centrale"
+								required />
+						</div>
+						<div class="form-group">
+							<label for="date">Date</label>
+							<input
+								type="date"
+								id="date"
+								class="form-control"
+								name="date"
+								required />
+						</div>
+						<div class="form-group">
+							<label for="contact">Contact de la personne qui l'a trouvé</label>
+							<input
+								type="text"
+								id="contact"
+								class="form-control"
+								name="contact"
+								required />
+						</div>
+
+						<hr />
+						<div class="container">
+							<div class="row justify-content-between">
+								<p class="col-6" id="txt-confirmation">
+									En publiant, vous confirmez que ces informations sont exactes.
+								</p>
+								<button
+									type="submit"
+									class="btn-solid btn-styled theme-danger col-4">
+									Publier l'objet
+								</button>
+							</div>
+						</div>
+					</form>
+				</section>
+			</div>
+		</main>
 
 		<!--FOOTER-->
 		<footer id="Footer">

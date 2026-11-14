@@ -1,0 +1,40 @@
+#section-hero {
+	background-color: var(--color-jetblack-5);
+	color: white;
+	padding: var(--spacing-lg);
+}
+
+#section-form {
+	margin: var(--spacing-lg);
+	width: 100%;
+}
+
+input,
+textarea {
+	background-color: var(--color-beige-1);
+}
+
+#signalement {
+	color: var(--color-raspberry-4);
+	margin-bottom: var(--spacing-sm);
+}
+
+h1 {
+	margin-bottom: var(--spacing-sm);
+}
+
+#sous-titre {
+	margin-bottom: 5rem;
+}
+
+.badge {
+	margin-right: var(--spacing-xs);
+}
+
+label {
+	margin: var(--spacing-sm) 0;
+}
+
+#txt-confirmation {
+	font-size: small;
+}
